@@ -91,6 +91,11 @@ kotlin {
             implementation(libs.mockk.common)
         }
     }
+    dependencies{
+        add("kspCommonMainMetadata", libs.koin.compiler)
+        add("kspAndroid",  libs.koin.compiler)
+        add("kspIosX64",  libs.koin.compiler)
+    }
 
     testlogger {
         theme = com.adarshr.gradle.testlogger.theme.ThemeType.STANDARD
